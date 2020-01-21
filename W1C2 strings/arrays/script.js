@@ -1,3 +1,5 @@
-let f = "hello there";
-let str1 = "this is normal " + f;
-let str2 = `this is normal ${f}`;
+function capital(s) {
+    let first = s.charAt(0).toUpperCase();
+    let rest = s.substr(1, s.length).toLowerCase();
+    return first + rest;
+}
