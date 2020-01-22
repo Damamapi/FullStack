@@ -1,12 +1,26 @@
 function ex(s) {
     let arr = s.split(" ");
-    console.log(arr.length);
+    console.log(countWords(arr));
+    // console.log(arr.length);
     let r = "";
     for(let i = 0; i < arr.length; i++) {
-        console.log("r, capitalL(arr[i])");
+        // console.log("r, capitalL(arr[i])");
         r += (reverseString(capitalL(arr[i])) + " ");
     }
-    console.log("after");
+    // console.log("after");v 
+    return r;
+}
+
+function countWords(s) {
+    let r = [];
+    for(string of s) {
+        
+        if(r[string] == undefined) {
+            r[string] = 1;
+        } else {
+            r[string]++;
+        }
+    }
     return r;
 }
 
