@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Find your gasoline cost!</title>
+</head>
+<body>
+    <div id="content">
+        <div id="title">
+            <h1>Calculate the cost of your gasoline!</h1>
+        </div>
+        <div id="input_fields">
+            <div class="inputs">
+                Day of the week: 
+                <select name="" id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="inputs">
+                Hour (24h format): 
+                <input type="number" name="" value="1" id="hour" min="0" max="24">
+            </div>
+            <div class="inputs">
+                Number of Galons: 
+                <input type="number" name="" value="2" id="galons" min="2" max="100">
+            </div>
+        </div>
+        <button id="calc-btn">Calculate!</button>
+        <h3 id="result">Your total cost will appear here</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
