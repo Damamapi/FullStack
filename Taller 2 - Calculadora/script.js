@@ -12,8 +12,9 @@ buttons.forEach(element => {
 let lastPressed;
 let op = '!!'
 let num1 = 0, num2 = 0
+let text
 function parseInput(inp) {
-    let text = resultText.innerHTML
+    text = resultText.innerHTML
     switch(inp) {
         case '0':
             if(text != '0') text += '0';
