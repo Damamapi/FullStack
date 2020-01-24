@@ -1,0 +1,51 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+html, body {
+    
+    width: 90%;
+    height: 90%;
+}
+
+body {
+    margin: 10px 10%;
+}
+
+#buttons {
+    display: grid;
+    margin: 10px auto;
+    grid-template: 1fr repeat(4, 1fr) / repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+#result {
+    text-align: right;
+    grid-column: 1 / span 4;
+    font-size: 10vw;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.calc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    font-size: 10vh;
+    margin: 2px;
+    padding: 30px;
+    user-select: none;
+}
+
+.calc-btn:hover {
+    background-color: greenyellow;
+}
+
+.calc-btn:active {
+    background-color: red;
+}
