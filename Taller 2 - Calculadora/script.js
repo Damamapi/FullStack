@@ -28,7 +28,7 @@ function parseInput(inp) {
         case '7':
         case '8':
         case '9':
-            if(text === '0' || lastPressed === '=') text = inp;
+            if(text === '0' || lastPressed === '=' || lastPressed === 'Enter') text = inp;
             else text += inp
             break;
         case '*':
@@ -41,6 +41,7 @@ function parseInput(inp) {
             console.log(op)
             break
         case '=':
+        case 'Enter':
             console.log(op != '!!')
             if(op != '!!') {
                 num2 = parseInt(text)
@@ -84,3 +85,10 @@ function calculate(num1, num2, op) {
 function retInput(item) {
     return item.innerHTML
 }
+
+
+//Keyboard support
+
+document.addEventListener("keydown", (event) => {
+    parseInput(event.key)
+})
