@@ -4,8 +4,7 @@ let resultText = document.getElementById('result')
 
 buttons.forEach(element => {
     element.addEventListener('click', function(event) {
-        console.log(retInput(event.target))
-        parseInput(retInput(event.target))
+        parseInput(event.target.innerHTML)
     })
 });
 
@@ -81,11 +80,6 @@ function calculate(num1, num2, op) {
     }
     return r
 }
-
-function retInput(item) {
-    return item.innerHTML
-}
-
 
 //Keyboard support
 
