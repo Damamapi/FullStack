@@ -1,0 +1,53 @@
+body {
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#selectors {
+    display: flex;
+    justify-content: space-around;
+}
+
+#filter, #sort {
+    margin: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.element {
+    color: #DDD;
+    background-color: #222;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.Foo {
+    background-color:teal;
+}
+
+.Bar {
+    background-color: rgb(20, 71, 20);
+}
+
+.FooBar {
+    background-color:rgb(96, 31, 149);
+}
+
+
+@media only screen and (min-width: 700px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 40%;
+    }
+}
