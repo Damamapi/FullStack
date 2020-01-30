@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "nombre": "Iphone X",
+    "precio": 3.1416,
+    "disponile": true,
+    "colores": [
+        "Rojo",
+        "Azul",
+        "Amarillo"
+    ]
+}

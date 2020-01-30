@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom sorting</title>
+</head>
+
+<body>
+    <h2>Filter</h2>
+    <div id="selectors">
+        <div>
+            <label>Sort</label>
+            <select id="sort">
+                <option value="AZ" selected>A - Z</option>
+                <option value="ZA">Z - A</option>
+                <option value="LotoHi">Price - Low to High</option>
+                <option value="HitoLo">Price - High to Low</option>
+            </select>
+        </div>
+        <button id="chaosButton">Chaos</button>
+    </div>
+
+    <div id="container">
+        <div class="element">
+            name <br> price
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

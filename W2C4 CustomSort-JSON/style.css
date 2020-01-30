@@ -1,0 +1,53 @@
+body {
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+    background-color: gray;
+}
+
+#selectors {
+    display: flex;
+    justify-content: space-around;
+}
+
+#filter, #sort {
+    margin: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.element {
+    color: #DDD;
+    background-color: #222;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.cheap {
+    background-color: green;
+}
+
+.norm {
+    background-color: rg    b(51, 51, 51);
+}
+
+.exp {
+    background-color: red;
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 40%;
+    }
+}
