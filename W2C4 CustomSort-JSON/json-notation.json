@@ -7,5 +7,10 @@
         "Rojo",
         "Azul",
         "Amarillo"
-    ]
+    ],
+    "objeto": {
+        "id":2,
+        "precio": 11412,
+        "nombre": "Nombre"
+    }
 }

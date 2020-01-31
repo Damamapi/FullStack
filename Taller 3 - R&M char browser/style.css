@@ -1,0 +1,34 @@
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+footer {
+    position: absolute;
+    text-align: end;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: lightgray;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-top: 10px;
+    position: absolute;
+    right: 1rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
