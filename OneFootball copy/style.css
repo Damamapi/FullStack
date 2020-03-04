@@ -1,0 +1,47 @@
+body {
+    background: #fff;
+}
+
+nav {
+    background: #fff;
+    padding: 0 10%;
+}
+
+.brand-logo {
+    color: #32b846 !important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.divLogo {
+    display: flex;
+    align-content: flex-start;
+}
+
+.titleIco {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.searchForm {
+    display: flex;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    width: 400px;
+    padding-bottom: 0 !important;
+    padding: 0 10px;
+    height: 46px;
+    margin-top: 10px;
+}
+
+.searchBar {
+    margin:0 !important;
+    padding:0 !important;
+    border: none !important;
+}
+
+.navIco {
+    color: #AAA !important;
+    margin-top: -10px;
+}
+
