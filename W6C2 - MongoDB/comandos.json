@@ -1,0 +1,52 @@
+{
+    nombre: 'David',
+    nombre2: 'Mauricio'
+    apellido: 'Martínez',
+    edad: 20,
+    mascotas: ['Mirringa', 'Misifu'],
+    favoritos: {
+        comida: 'pasta',
+        deporte: 'bicicross',
+        musica: 'rock'
+    }
+}
+
+{
+    nombre: 'Nikolas',
+    apellido: 'Martínez',
+    edad: 28,
+    mascotas: ['Mirringa', 'Bruno'],
+    favoritos: {
+        comida: 'pastel',
+        deporte: 'futbol',
+        musica: 'baladas'
+    }
+}
+
+{
+    nombre: 'Pepito',
+    apellido: 'Perez',
+    edad: 25,
+    mascotas: ['Can'],
+    favoritos: {
+        comida: 'helado',
+        deporte: 'natacion',
+        musica: 'salsa'
+    }
+}
+
+{
+    nombre: 'Jon',
+    apellido: 'Doe',
+    edad: 5,
+    mascotas: ['Laika', 'Perry'],
+    favoritos: {
+        comida: 'hamburguesa',
+        deporte: 'baloncesto',
+        musica: 'merengue'
+    }
+}
+
+
+
+
