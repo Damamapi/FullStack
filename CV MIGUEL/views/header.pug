@@ -2,9 +2,44 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        link(rel="stylesheet" href="/css/style.css")
         title CV Miguel
     body
-        p navbar
+        header
+            nav(class="deep-purple")
+                div(class="nav-wrapper container")
+                    a(class="brand-logo" href="/") Miguel Gustavo Nieto
+                    ul(id="nav-mobile" class="right hide-on-med-and-down")
+                        li(id="objetivo")
+                            a(class="nav-link" href="/objetivo") Objetivo
+                        li(id="experiencia")
+                            a(class="nav-link" href="/experiencia") Experiencia
+                        li(id="portafolio")
+                            a(class="nav-link" href="/portafolio") Portafolio
+                        li(id="referencias")
+                            a(class="nav-link" href="/referencias") Referencias
+                        li(id="contacto")
+                            a(class="nav-link" href="/contacto") Contacto
+        
 
-    block content
+        main
+            block content
+                p HEADER
+
+        footer(class="page-footer deep-purple")
+            div(class="footer-copyright")
+                div(class="container") 
+                    p(class="left") BICTIA Institute 2020
+                    p(class="right") David Martínez
+
+
+
+
+    
+
+        script(src="/js/script.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+

@@ -18,6 +18,8 @@ app.route('/login/?').get( (req, res) => {
     let q = req.query
     if(q.user === 'david' && q.pwd === '1234') {
         res.sendFile(`${files}/user.html`)
+    } else {
+        res.send('ERROR')
     }
 })
 
