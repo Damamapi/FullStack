@@ -1,6 +1,6 @@
 var mongoose = require('mongoose')
-
-var contactSchema = mongoose.Schema({
+var Schema = mongoose.Schema
+var contactSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -17,8 +17,10 @@ var contactSchema = mongoose.Schema({
     }
 })
 
-var Contact = module.exports = mongoose.model('contact', contactSchema)
+const Contact = mongoose.model('contact', contactSchema)
 
-module.exports.get = function (callback, limit) {
-    Contact.find(callback).limit(limit)
-}
+module.exports = Contact
+
+// module.exports.get = function (callback, limit) {
+//     Contact.find(callback).limit(limit)
+// }

@@ -1,31 +1,28 @@
 Contact = require('./contactModel')
 
 exports.index = (req, res) => {
-    Contact.get((err, contacts) => {
-        if(err) {
+    Contact.find({})
+        .then((contacts) => {
             res.json({
-                status:'error',
-                message:err
+                status: 'success',
+                message: 'Contacts retrieved successfully',
+                data: contacts
             })
-        }
-        res.json({
-            status:'success',
-            message:'Contacts retrieved successfully',
-            data: contacts
         })
-    })
 }
 
 exports.new = (req, res) => {
-    var contact = new Contact()
-    contact.name = req.body.name ? req.body.name : contact.name
-    contact.gender = req.body.gender
-    contact.email = req.body.email
-    contact.phone = req.body.phone
-
+    let contact = new Contact()
+    contact.name = req.query.name ? req.query.name : contact.name
+    contact.gender = req.query.gender
+    contact.email = req.query.email
+    contact.phone = req.query.phone
+    
+    console.log(req)
     contact.save((err) => {
         if(err) res.json(err)
-
+        else {
+        }
         res.json({
             message: 'New contact created!',
             data: contact
@@ -46,10 +43,10 @@ exports.view = function (req, res) {
 exports.update = (req, res) => {
     Contact.findById(req.params.contact_id, (err, contact) => {
         if (err) res.send(err)
-        contact.name = req.body.name ? req.body.name : contact.name
-        contact.gender = req.body.gender
-        contact.email = req.body.email
-        contact.phone = req.body.phone
+        contact.name = req.query.name ? req.query.name : contact.name
+        contact.gender = req.query.gender
+        contact.email = req.query.email
+        contact.phone = req.query.phone
 
         contact.save((err) => {
             if (err) res.json(err)

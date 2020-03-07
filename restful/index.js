@@ -7,12 +7,6 @@ let app = express();
 var port = 3000
 
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
-})
-
-app.use('/api', apiRoutes)
-
 app.use(bodyParser.urlencoded({
     extended: true
 }))
@@ -26,6 +20,14 @@ mongoose.connect('mongodb://localhost/restful', {
 var db = mongoose.connection
 if(!db) console.log('Error connectng db')
 else console.log('Db connected successfully')
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
+
+app.use('/api', apiRoutes)
+
+
 
 app.listen(port, () => {
     console.log('Running RestFul on port ' + port)
