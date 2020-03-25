@@ -10,8 +10,8 @@ router.get('/', (req, res) => {
 var contactController = require('./contactController')
 
 router.route('/contacts')
-    .get(contactController.index)
-    .post(contactController.new)
+    .get(contactController.index)q
+    .post(contactController.new)    
 
 router.route('/contacts/:contact_id')
     .get(contactController.view)

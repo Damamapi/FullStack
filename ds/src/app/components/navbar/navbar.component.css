@@ -1,0 +1,12 @@
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-nav li {
+    padding-left: 1rem;
+}
+
+nav {
+    background-color: #181716;
+}

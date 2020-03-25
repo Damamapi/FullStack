@@ -3,7 +3,6 @@ const app = express()
 const port = 6969
 const path = require('path')
 
-var route = 'NOTHING'
 
 const files = path.join(__dirname, '/views')
 app.set('view engine', 'pug')

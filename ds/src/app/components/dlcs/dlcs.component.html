@@ -1,0 +1,35 @@
+<div class="container text-light pt-5 pb-5">
+  <h3>Don't Starve Expansion Packs</h3>
+
+  <div class="container pt-2 pb-5" *ngFor="let dlc of dlcs">
+    <h4>{{dlc.name}}</h4>
+    <p>{{dlc.description}}</p>
+    <div id="{{dlc.path}}Carousel" class="carousel slide container" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/{{dlc.path}}1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" *ngFor="let i of numbers">
+          <img src="assets/img/{{dlc.path}}{{i}}.jpg" class="d-block w-100" alt="...">
+        </div>
+
+        <a class="carousel-control-prev" href="#{{dlc.path}}Carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#{{dlc.path}}Carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <h5>Key Features</h5>
+    <ul>
+        <li *ngFor="let f of dlc.features">
+            <h6>{{f.h}}</h6>
+            <p>{{f.p}}</p>
+        </li>
+    </ul>
+  </div>
+
+</div>
